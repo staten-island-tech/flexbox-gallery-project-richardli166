@@ -1,0 +1,46 @@
+body {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+#card {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88fbff;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.card-img {
+    width: 350px;
+    height: 400px;
+}
+
+.card-desc {
+    font-size: 1.3rem;
+}
+
+.card-display {
+    display: flex;
+    
+}
+
+div {
+    border-radius: 50px;
+}
