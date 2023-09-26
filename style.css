@@ -15,7 +15,7 @@ body {
 }
 
 #card {
-    width: 400px;
+    width: 20%;
     height: 350px;
     display: flex;
     background-color: #88fbff;
@@ -23,6 +23,11 @@ body {
     flex-direction: column;
     margin-bottom: 100px;
     box-shadow: 10px 10px;
+    padding: 20px;
+    transition: 1.5s;
+}
+#card:hover{
+    transform: scale(1.1);
 }
 
 .card-title {
@@ -41,6 +46,9 @@ body {
 
 .card-display {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 div {
