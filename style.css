@@ -12,6 +12,7 @@ body {
     width: 30%;
     margin-top: 30px;
     margin-bottom: 60px;
+    padding: 5px;
 }
 
 .card {
@@ -23,52 +24,99 @@ body {
     flex-direction: column;
     margin-bottom: 100px;
     box-shadow: 10px 10px;
-    padding: 20px;
+    padding: 30px;
     transition: 1s;
+    animation: appearin 3s;
 }
+
 #card1:hover {
     transform: scale(1.1);
 }
-#card2:hover{
+
+#card2:hover {
     transform: rotate(1turn);
 }
-#card3:hover{
+
+#card3:hover {
     transform: skew(20deg, 20deg);
 }
-#card4:hover{
+
+#card4:hover {
     transform: translate(0px, -30px);
 }
-#card5:hover{
-    transform: matrix(1.16,0,0,1.1,1,-50);
+
+#card5:hover {
+    transform: matrix(1.16, 0, 0, 1.1, 1, -50);
 }
+
 #card6:hover {
     transform: scale(1.1);
 }
-#card7:hover{
+
+#card7:hover {
     transform: rotate(1turn);
 }
-#card8:hover{
+
+#card8:hover {
     transform: skew(20deg, 20deg);
 }
-#card9:hover{
+
+#card9:hover {
     transform: translate(0px, -30px);
 }
-#card10:hover{
-    transform: matrix(1.16,0,0,1.1,1,-50);
+
+#card10:hover {
+    transform: matrix(1.16, 0, 0, 1.1, 1, -50);
 }
+
 #card11:hover {
     transform: scale(1.1);
 }
-#card12:hover{
+
+#card12:hover {
     transform: rotate(1turn);
 }
+
 .card-title {
     font-size: 2.2rem;
 }
 
+@keyframes appearin {
+    0% {
+        transform: scale(0.1);
+    }
+
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 40%;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+    .title{
+        font-size: 1rem;
+    }
+}
+
 .card-img {
-    width: 345px;
-    height: 171px;
+    width: 90%;
+    height: 60%;
     margin: auto;
 }
 
